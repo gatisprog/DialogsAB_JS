@@ -14,5 +14,3 @@ Pirmajā nodarbībā apgūtais:
 5. Github.com apgūšana un repisotorija izveidošana
 
 6. 😃 💻 🇱🇻 🥇
-
-7. 

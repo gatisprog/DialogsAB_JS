@@ -3,7 +3,7 @@
 
 2024.gada 16.oktobrī
 
-Pirmajā nodarbībā apgūtais:
+Pirmā nodarbība:
 
 1. Dialogs AB E-Vides lietošanas apgūšana
    - pieslēgšanās e-videi;
@@ -14,3 +14,15 @@ Pirmajā nodarbībā apgūtais:
 5. Github.com apgūšana un repisotorija izveidošana
 
 6. 😃 💻 🇱🇻 🥇
+
+
+2024.gada 21.oktobrī
+
+Otrā nodarbība:
+
+1. Visual Studio Code instalēšana un konfigurēšana
+- pieslēgšanās VSC;
+- Extensions pievienošana;
+- Savienošana ar GitHub;
+2. Git instalēšana
+3. Mājas darbs līdz nākamajai nodarbībai izveidot html un css failu

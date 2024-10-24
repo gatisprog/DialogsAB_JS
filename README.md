@@ -1,9 +1,9 @@
 # DialogsAB_JS
 ***Elektroniskā klade par JavaScript***
 
-2024.gada 16.oktobrī
+_2024.gada 16.oktobrī_
 
-Pirmā nodarbība:
+***Pirmā nodarbība:***
 
 1. Dialogs AB E-Vides lietošanas apgūšana
    - pieslēgšanās e-videi;
@@ -16,9 +16,9 @@ Pirmā nodarbība:
 6. 😃 💻 🇱🇻 🥇
 
 
-2024.gada 21.oktobrī
+_2024.gada 21.oktobrī_
 
-Otrā nodarbība:
+***Otrā nodarbība:***
 
 1. Visual Studio Code instalēšana un konfigurēšana
 - pieslēgšanās VSC;
@@ -27,9 +27,9 @@ Otrā nodarbība:
 2. Git instalēšana
 3. Mājas darbs līdz nākamajai nodarbībai izveidot html un css failu
 
-2024.gada 23.oktobrī
+_2024.gada 23.oktobrī_
 
-Trešā nodarbība:
+***Trešā nodarbība:***
 
 1. Adreses izvietošana lokāli no datora, ar relatīvo adresi un ar absolūto adresi
 2. Darbs ar Live Stream, sava darba tiešsaiste, lai nav jāpārlādē pārlūks
@@ -39,3 +39,4 @@ Trešā nodarbība:
  - kopējais krāsu toņu skaits.
 4. Cosole log. 
 5. Mājas darbs līdz nākamajai nodarbībai, veikt matemātiskos aprēķunus ar console.
+   🤓

@@ -26,3 +26,16 @@ Otrā nodarbība:
 - Savienošana ar GitHub;
 2. Git instalēšana
 3. Mājas darbs līdz nākamajai nodarbībai izveidot html un css failu
+
+2024.gada 23.oktobrī
+
+Trešā nodarbība:
+
+1. Adreses izvietošana lokāli no datora, ar relatīvo adresi un ar absolūto adresi
+2. Darbs ar Live Stream, sava darba tiešsaiste, lai nav jāpārlādē pārlūks
+3. Ieskats programmēšanas valodas vērtībās:
+ - biti, baiti, kilobaiti utt;
+ - krāsas (sarkans, zils, zaļš);
+ - kopējais krāsu toņu skaits.
+4. Cosole log. 
+5. Mājas darbs līdz nākamajai nodarbībai, veikt matemātiskos aprēķunus ar console.

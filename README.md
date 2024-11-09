@@ -1,9 +1,9 @@
 # DialogsAB_JS
-***Elektroniskā klade par JavaScript***
+### ***Elektroniskā klade par JavaScript***
 
 ***2024.gada 16.oktobrī***
 
-**Pirmā nodarbība:**
+<ins>**Pirmā nodarbība**</ins>
 
 1. Dialogs AB E-Vides lietošanas apgūšana
    - pieslēgšanās e-videi;
@@ -18,7 +18,7 @@
 
 ***2024.gada 21.oktobrī***
 
-**Otrā nodarbība:**
+<ins>**Otrā nodarbība**</ins>
 
 1. Visual Studio Code instalēšana un konfigurēšana
 - pieslēgšanās VSC;
@@ -29,7 +29,7 @@
 
 ***2024.gada 23.oktobrī***
 
-**Trešā nodarbība:**
+<ins>**Trešā nodarbība**</ins>
 
 1. Adreses izvietošana lokāli no datora, ar relatīvo adresi un ar absolūto adresi
 2. Darbs ar Live Stream, sava darba tiešsaiste, lai nav jāpārlādē pārlūks
@@ -41,9 +41,9 @@
 5. Mājas darbs līdz nākamajai nodarbībai, veikt matemātiskos aprēķinus ar console.
    🤓
 
-***2024.gada 28.oktobrī***
+ ***2024.gada 28.oktobrī***
 
-**Ceturtā nodarbība**
+<ins>**Ceturtā nodarbība**</ins>
 
 1. Sagatavošānās darbam:
    - savu repozotoriju lejuplāde ar GitHub Clone palīdzību;
@@ -70,3 +70,37 @@ Only use var if you MUST support old browsers.
 7. Arrays jeb darbs ar masīviem (https://www.w3schools.com/js/js_arrays.asp)
    
 👨‍🎓
+
+***2024.gada 30.oktobrī***
+
+<ins>**Piektā nodarbība**</ins>
+
+1. Arrays, jeb darbs ar masīviem (https://www.w3schools.com/js/js_arrays.asp)
+
+"Kāpēc izmantot masīvus?
+Ja jums ir vienumu saraksts (piemēram, automašīnu nosaukumu saraksts), automašīnu glabāšana atsevišķos mainīgajos varētu izskatīties šādi:
+let car1 = "Saab";
+let car2 = "Volvo";
+let car3 = "BMW";
+Tomēr, ko darīt, ja vēlaties apskatīt automašīnas un atrast konkrētu? Un kā būtu, ja tev būtu nevis 3 mašīnas, bet 300?
+Risinājums ir masīvs! Masīvā ar vienu nosaukumu var būt daudz vērtību, un vērtībām var piekļūt, atsaucoties uz indeksa numuru"
+
+- Arrays pamata metodes:
+    <p id="array_initial">Paragrāfa array_initial sākuma stāvoklis.</p>
+    <p id="array_push">Paragrāfa array_push (pievienot beigas) sākuma stāvoklis.</p>
+    <p id="array_unshift">Paragrāfa array_unshift (pievienot sākumā) sākuma stāvoklis.</p>
+    <p id="array_splice">Paragrāfa array_splice (pievienot jebkurā vietā, pie reizes arī izdzēst) sākuma stāvoklis.</p>
+    <p id="array_delete">Paragrāfa array_delete (izdzēst - NB! paliks "vieta" ar undefined) sākuma stāvoklis.</p>
+    <p id="array_pop">Paragrāfa array_pop (izdzēst pedējo elementu) sākuma stāvoklis.</p>
+    <p id="array_shift">Paragrāfa array_shift (izdzēst pirmo elementu) sākuma stāvoklis.</p>
+    <p id="array_shift">Paragrāfa array_shift sākuma stāvoklis.</p>
+    <p id="array_unshift">Paragrāfa array_unshift sākuma stāvoklis.</p>
+
+  ![image](https://github.com/user-attachments/assets/086150fc-3d9b-4c63-be2c-b3f5be064b96)
+
+3. HTML elementi un atribūti;
+4. Datu tipi;
+5. Cikli (loops);
+
+
+

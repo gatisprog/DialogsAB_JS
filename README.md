@@ -99,8 +99,65 @@ Risinājums ir masīvs! Masīvā ar vienu nosaukumu var būt daudz vērtību, un
   ![image](https://github.com/user-attachments/assets/086150fc-3d9b-4c63-be2c-b3f5be064b96)
 
 3. HTML elementi un atribūti;
-4. Datu tipi;
+4. Datu tipi (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures);
 5. Cikli (loops);
 
+***2024.gada 04.novembrī***
+
+<ins>**Sestā nodarbība**</ins>
+
+1. if ... else (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+   
+The if...else statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement in the optional else clause will be executed.
+
+Patiess
+Programmā JavaScript patiesā vērtība ir vērtība, kas tiek ņemta vērā Būlatrue kontekstā . Visas vērtības ir patiesas, ja vien tās nav definētas kā nepatiesas . Tas ir, visas vērtības ir patiesas, izņemot , , , , , , , , un .false0-00n""nullundefinedNaNdocument.all. JavaScript izmanto tipa piespiešanu Būla kontekstos. JavaScript patieso vērtību piemēri (kas tiks piespiesti trueBūla kontekstos un tādējādi izpildīs ifbloku): JS
+if (true)
+if ({})
+if ([])
+if (42)
+if ("0")
+if ("false")
+if (new Date())
+if (-42)
+if (12n)
+if (3.14)
+if (-3.14)
+if (Infinity)
+if (-Infinity)
+
+![image](https://github.com/user-attachments/assets/6c1bea36-7367-4a88-8433-d0908d17a86c)
+
+![image](https://github.com/user-attachments/assets/8715c98f-55b1-4ee0-8db7-1f8f6dcea862)
+
+2. switch (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+
+Switch priekšraksts novērtē izteiksmi, saskaņojot izteiksmes vērtību ar gadījuma klauzulas sēriju, un izpilda paziņojumus pēc pirmās gadījuma klauzulas ar atbilstošu vērtību, līdz tiek konstatēts pārtraukuma priekšraksts. Slēdža priekšraksta noklusējuma klauzula tiks pārlēkta, ja neviens gadījums neatbilst izteiksmes vērtībai.
+   
+const expr = 'Papayas';
+
+switch (expr) {
+
+  case 'Oranges':
+  
+    console.log('Oranges are $0.59 a pound.');
+    
+    break;
+    
+  case 'Mangoes':
+  
+  case 'Papayas':
+  
+    console.log('Mangoes and papayas are $2.79 a pound.');
+    
+    // Expected output: "Mangoes and papayas are $2.79 a pound."
+    
+    break;
+    
+  default:
+  
+    console.log(`Sorry, we are out of ${expr}.`);
+
+    
 
 

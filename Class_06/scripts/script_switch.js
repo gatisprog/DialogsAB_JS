@@ -15,7 +15,7 @@ default:
 */
 // ja analizējamā_izteiksme ir ar stāvokli analizējamās_izteiksmes_iespējamais_stāvoklis_1, tad
 // tiks izpildītas darbības_1 un darbības_2 (NB! pilda līdz break;)
-// ja, pimēram, pēc darbības_3_4 nebūtu break; tad, ja analizējamā_izteiksme būtu ar stāvokli
+// ja, piemēram, pēc darbības_3_4 nebūtu break; tad, ja analizējamā_izteiksme būtu ar stāvokli
 // analizējamās_izteiksmes_iespējamais_stāvoklis_3 vai _4, tad tiktu izpildītas gan darbības_3_4
 // gan darbības_default_gadījumā;
 

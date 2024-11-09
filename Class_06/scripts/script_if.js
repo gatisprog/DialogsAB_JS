@@ -6,7 +6,7 @@
 // if (nosacījums_vai_saliktais_nosacījums) {darbība;}
 // if (nosacījums_vai_saliktais_nosacījums) {darbības;}
 // if (nosacījums_vai_saliktais_nosacījums) darbība; else savādāka_darbība;
-// if (nosacījums_vai_saliktais_nosacījums) {darbības;} else {sacādākas_darbības;}
+// if (nosacījums_vai_saliktais_nosacījums) {darbības;} else {savādākas_darbības;}
 
 //https://www.w3schools.com/js/tryit.asp?filename=tryjs_ifthen
 /*

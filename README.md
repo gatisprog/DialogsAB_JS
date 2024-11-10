@@ -192,3 +192,66 @@ Tas darbojas šādi:
 //Paziņojums While izveido cilpu, kas izpilda norādīto paziņojumu, kamēr testa nosacījums tiek novērtēts kā patiess. Nosacījums tiek novērtēts pirms paziņojuma izpildes.//
 
 (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
+
+Sekojošā while cilpa atkārtojas tik ilgi, kamēr n ir mazāks par trīs.
+
+let n = 0;
+
+let x = 0;
+
+while (n < 3) {
+
+  n++;
+  
+  x += n;
+  
+}
+
+4. For (https://www.w3schools.com/js/js_loop_for.asp)
+
+Paziņojums For izveido cilpu ar 3 neobligātām izteiksmēm:
+
+for (expression 1; expression 2; expression 3) {
+
+  // code block to be executed
+  
+}
+
+Izteiksme 1 tiek izpildīta (vienu reizi) pirms koda bloka izpildes.
+
+2. izteiksme definē nosacījumu koda bloka izpildei.
+
+Izteiksme 3 tiek izpildīta (katru reizi) pēc koda bloka izpildes.
+
+Piemērs:
+
+for (let i = 0; i < 5; i++) {
+
+  text += "The number is " + i + "<br>";
+  
+}
+
+No iepriekš minētā piemēra varat lasīt:
+
+Izteiksme 1 nosaka mainīgo pirms cilpas sākuma (lai i = 0).
+
+2. izteiksme definē nosacījumu, lai cilpa darbotos (i ir jābūt mazākam par 5).
+
+3. izteiksme palielina vērtību (i++) katru reizi, kad tiek izpildīts koda bloks cilpā.
+
+//Mājas darbs:
+
+“Pusdienas laika” uzdevumi (iemaņu attīstīšanai; nav obligāti):
+treniņi ar if
+1. Uzdot divus mainīgos, piemēram, a = 1; b = 10; sakārtot tos un attēlot augošā secībā.
+2. Uzdot divus mainīgos, piemēram, a = 1; b = 10; sakārtot tos un attēlot dilstošā secībā.
+3. Uzdot trīs mainīgos, piemēram, a = 1; b = 10; c = 3; sakārtot tos un attēlot augošā secībā. Atkārtot uzdevumu pie dažādām a, b un c sākuma vērtību kombinācijām.
+4. Uzdot trīs mainīgos, piemēram, a = 1; b = 10; c = 3; sakārtot tos un attēlot dilstošā secībā. Atkārtot uzdevumu pie dažādām a, b un c sākuma vērtību kombinācijām.
+5. Uzdot četrus mainīgos, piemēram, a = 1; b = 10; c = 3; d = 7; sakārtot tos un attēlot augošā secībā. Risinot uzdevumu, saprast, ka ar diskrētiem mainīgajiem (a,b,c,d) tas vairs nav tik vienkārši, aizdomāties par masīva (a[0],a[1],a[2],a[3]), ciklu un kādas metodes, piemēram, burbuļu metodi, izmantošanu.
+
+treniņi ar while (un if)
+1. Attēlot visus veselus skaitļus no 1 līdz 30.
+2. Attēlot visus veselus nepāru skaitļus no 1 līdz 30.
+3. Attēlot visus veselus pāru skaitļus no 1 līdz 30.
+4. Attēlot visus veselus nepāru skaitļus no 1 līdz 30, bet 5 un 11 neattēlot.
+5. Attēlot visus veselus pāru skaitļus no 1 līdz 30, bet 12, 14, 16, 18, neattēlot.

@@ -132,7 +132,7 @@ if (-Infinity)
 
 2. switch (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
 
-Switch priekšraksts novērtē izteiksmi, saskaņojot izteiksmes vērtību ar gadījuma klauzulas sēriju, un izpilda paziņojumus pēc pirmās gadījuma klauzulas ar atbilstošu vērtību, līdz tiek konstatēts pārtraukuma priekšraksts. Slēdža priekšraksta noklusējuma klauzula tiks pārlēkta, ja neviens gadījums neatbilst izteiksmes vērtībai.
+Paziņojums switch tiek izmantots, lai veiktu dažādas darbības, pamatojoties uz dažādiem apstākļiem. Switch priekšraksts novērtē izteiksmi, saskaņojot izteiksmes vērtību ar gadījuma klauzulas sēriju, un izpilda paziņojumus pēc pirmās gadījuma klauzulas ar atbilstošu vērtību, līdz tiek konstatēts pārtraukuma priekšraksts. Switch priekšraksta noklusējuma klauzula tiks pārlēkta, ja neviens gadījums neatbilst izteiksmes vērtībai.
    
 const expr = 'Papayas';
 
@@ -158,6 +158,37 @@ switch (expr) {
   
     console.log(`Sorry, we are out of ${expr}.`);
 
+//Sintakse
+
+switch(expression) {
+
+  case x:
+  
+    // code block
     
+    break;
+    
+  case y:
+  
+    // code block
+    
+    break;
+    
+  default:
+  
+    // code block
+    
+}
 
+Tas darbojas šādi:
 
+- Switch izteiksme tiek novērtēta vienreiz.
+- Izteiksmes vērtība tiek salīdzināta ar katra gadījuma vērtībām.
+- Ja ir atbilstība, tiek izpildīts saistītais koda bloks.
+- Ja atbilstības nav, tiek izpildīts noklusējuma koda bloks.
+
+3. While (kamēr)
+
+//Paziņojums While izveido cilpu, kas izpilda norādīto paziņojumu, kamēr testa nosacījums tiek novērtēts kā patiess. Nosacījums tiek novērtēts pirms paziņojuma izpildes.//
+
+(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)

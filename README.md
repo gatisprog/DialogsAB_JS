@@ -255,3 +255,93 @@ treniņi ar while (un if)
 3. Attēlot visus veselus pāru skaitļus no 1 līdz 30.
 4. Attēlot visus veselus nepāru skaitļus no 1 līdz 30, bet 5 un 11 neattēlot.
 5. Attēlot visus veselus pāru skaitļus no 1 līdz 30, bet 12, 14, 16, 18, neattēlot.
+
+
+***2024.gada 06.novembrī***
+
+<ins>**Septītā nodarbība**</ins>
+
+1. Patstāvīgais darbs, skaitļu kārtošana un skaitīšana
+   
+//!(https://www.geeksforgeeks.org/swap-two-numbers-without-using-temporary-variable/)
+
+![image](https://github.com/user-attachments/assets/ce646c25-82cd-4aed-956a-d7b69b0abda5)
+
+- skaitļu kārtošana, izmantojot burbuļa metodi (https://www.geeksforgeeks.org/sorting-in-array/)
+
+2. Cikls For - of (https://www.w3schools.com/js/js_loop_forof.asp)
+
+   JavaScript for ofpriekšraksts iziet cauri iterējama objekta vērtībām.
+
+Tas ļauj cilpu pāri atkārtojamām datu struktūrām, piemēram, masīviem, virknēm, kartēm, mezglu sarakstiem un citām.
+
+![image](https://github.com/user-attachments/assets/db1c1ac2-bf38-4676-8217-75c3fa941a56)
+
+3. Funkcijas (https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
+
+   Vēl viens būtisks kodēšanas jēdziens ir funkcijas , kas ļauj saglabāt koda fragmentu, kas veic vienu uzdevumu noteiktā blokā, un pēc tam izsaukt šo kodu, kad vien tas ir nepieciešams, izmantojot vienu īsu komandu, nevis rakstīt to pašu. kods vairākas reizes. Šajā rakstā mēs izpētīsim tādu funkciju pamatjēdzienus kā pamata sintakse, to izsaukšana un definēšana, darbības joma un parametri.
+   Funkcijas ir viens no JavaScript pamatelementiem. Funkcija JavaScript ir līdzīga procedūrai — priekšrakstu kopai, kas veic uzdevumu vai aprēķina vērtību, taču, lai procedūru kvalificētu kā funkciju, tai ir jāievada zināma ievade un jāatgriež izvade, ja pastāv kāda acīmredzama saistība starp ieeja un izeja. Lai izmantotu funkciju, tā ir jādefinē kaut kur tvērumā, no kura vēlaties to izsaukt.
+
+**Kur es varu atrast funkcijas?**
+
+JavaScript jūs atradīsit funkcijas visur. Faktiski mēs esam izmantojuši funkcijas visu kursu līdz šim; mēs vienkārši neesam par viņiem daudz runājuši. Tomēr tagad ir laiks, kad mums jāsāk skaidri runāt par funkcijām un patiešām izpētīt to sintaksi.
+
+Gandrīz vienmēr, kad izmantojat JavaScript struktūru, kurā ir iekavu pāris — ()un jūs neizmantojat vispārpieņemtu iebūvēto valodas struktūru, piemēram, for cilpu , while vai do...while cilpa vai ja... cits paziņojums , jūs izmantojat funkciju.
+
+
+***2024.gada 11.novembrī***
+
+<ins>**Astotā nodarbība**</ins>
+
+1. Funkcijas (https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
+    - anonīma funkcija:
+      
+      Līdz šim mēs tikko esam izveidojuši šādu funkciju:
+
+function myFunction() {
+
+  alert("hello");
+}
+
+Bet varat arī izveidot funkciju, kurai nav nosaukuma:
+
+(function () {
+
+  alert("hello");
+});
+
+To sauc par anonīmu funkciju, jo tai nav nosaukuma. Jūs bieži redzēsit anonīmas funkcijas, ja funkcija paredz saņemt citu funkciju kā parametru. Šajā gadījumā funkcijas parametrs bieži tiek nodots kā anonīma funkcija.
+
+2. Ieskats ChatsGpt lietošānā, kādas funkcijas tas pilda un ko mēs no tā varam iegūt. (https://chatgpt.com/)
+
+**ChatGPT** ir mākslīgā intelekta (AI) balstīta valodas modelis, kuru izstrādājusi OpenAI. Tas ir īpaši trenēts, lai saprastu un ģenerētu cilvēku valodu, un tā mērķis ir veidot sarunas ar lietotājiem, atbildot uz jautājumiem, piedāvājot informāciju, palīdzot ar uzdevumiem un pat piedāvājot radošas idejas.
+
+ChatGPT balstās uz **GPT (Generative Pre-trained Transformer)** arhitektūru, kas ir dziļās mācīšanās modelis, kas spēj analizēt un veidot tekstu, ņemot vērā lielus datu apjomus. Tā kā šis modelis ir apmācīts uz plašu tekstu datu kopumu, tas spēj atpazīt valodas modeļus un piedāvāt atbildes, kas bieži vien izklausās ļoti dabiski un līdzīgas cilvēku sarunām.
+
+ChatGPT var tikt izmantots dažādiem mērķiem, piemēram:
+- **Izglītība** – palīdzot cilvēkiem mācīties un izprast sarežģītas tēmas.
+- **Atbalsts klientiem** – sniedzot automatizētas atbildes uz biežāk uzdotajiem jautājumiem.
+- **Radošums** – palīdzot ģenerēt idejas, rakstīt stāstus, dzeju vai pat kodu.
+- **Konsultācijas** – piedāvājot informāciju un ieteikumus dažādās jomās, piemēram, veselībā, zinātnē vai tehnikā.
+
+Šis rīks nav tikai spējīgs atbildēt uz jautājumiem, bet arī veidot sarunas, pielāgojoties lietotāja vajadzībām un stilam. Tas nav cilvēks, bet tas izmanto sarežģītu algoritmu, lai “mākslīgi” atdarinātu cilvēka valodas izpratni un reakcijas.
+
+Kopumā ChatGPT ir viens no mūsdienu valodas modeļu piemēriem, kas ļauj cilvēkiem mijiedarboties ar tehnoloģijām dabiskā veidā.
+
+3. API lietošana
+ API jeb **lietojumprogrammu saskarne (Application Programming Interface)** ir kopums noteikumu un protokolu, kas ļauj dažādām programmām savstarpēji komunicēt un mijiedarboties. API definē, kā dažādi programmatūras komponenti var sazināties, kādi dati ir pieejami un kā tos var izmantot.
+
+Vienkāršoti sakot, API darbojas kā "tilts" starp divām programmām vai sistēmām, ļaujot tām apmainīties ar informāciju. Tas palīdz programmētājiem izmantot jau esošās funkcijas vai pakalpojumus, neizstrādājot tos no nulles.
+
+Piemēram, ja tu izmanto kādu lietotni, kas parāda laika prognozi, tā var izmantot API, lai iegūtu datus no laika servisa. Tas ļauj tai parādīt aktuālo laiku, nevis katru reizi pašai aprēķināt laika apstākļus.
+
+API var būt dažādi, piemēram:
+- **Web API** – API, kas darbojas internetā un ļauj dažādām tīmekļa lietotnēm mijiedarboties.
+- **Operētājsistēmas API** – ļauj programmatūrai izmantot operētājsistēmas funkcijas.
+- **Bibliotēku API** – nodrošina piekļuvi bibliotēkām vai rīkiem, ko var izmantot programmās.
+
+API ir ļoti svarīgi modernās programmēšanas pasaulē, jo tie ļauj dažādiem pakalpojumiem sadarboties un piedāvāt vienkāršus un efektīvus risinājumus.  
+
+4. Mini projektu gatavošana (https://javascript-mini-projects.netlify.app/) (https://github.com/bradtraversy/vanillawebprojects)
+   
+   

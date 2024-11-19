@@ -255,3 +255,36 @@ treniņi ar while (un if)
 3. Attēlot visus veselus pāru skaitļus no 1 līdz 30.
 4. Attēlot visus veselus nepāru skaitļus no 1 līdz 30, bet 5 un 11 neattēlot.
 5. Attēlot visus veselus pāru skaitļus no 1 līdz 30, bet 12, 14, 16, 18, neattēlot.
+
+
+***2024.gada 06.novembrī***
+
+<ins>**Septītā nodarbība**</ins>
+
+1. Patstāvīgais darbs, skaitļu kārtošana un skaitīšana
+   
+//!(https://www.geeksforgeeks.org/swap-two-numbers-without-using-temporary-variable/)
+
+![image](https://github.com/user-attachments/assets/ce646c25-82cd-4aed-956a-d7b69b0abda5)
+
+- skaitļu kārtošana, izmantojot burbuļa metodi (https://www.geeksforgeeks.org/sorting-in-array/)
+
+2. Cikls For - of (https://www.w3schools.com/js/js_loop_forof.asp)
+
+   JavaScript for ofpriekšraksts iziet cauri iterējama objekta vērtībām.
+
+Tas ļauj cilpu pāri atkārtojamām datu struktūrām, piemēram, masīviem, virknēm, kartēm, mezglu sarakstiem un citām.
+
+![image](https://github.com/user-attachments/assets/db1c1ac2-bf38-4676-8217-75c3fa941a56)
+
+3. Funkcijas (https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
+
+   Vēl viens būtisks kodēšanas jēdziens ir funkcijas , kas ļauj saglabāt koda fragmentu, kas veic vienu uzdevumu noteiktā blokā, un pēc tam izsaukt šo kodu, kad vien tas ir nepieciešams, izmantojot vienu īsu komandu, nevis rakstīt to pašu. kods vairākas reizes. Šajā rakstā mēs izpētīsim tādu funkciju pamatjēdzienus kā pamata sintakse, to izsaukšana un definēšana, darbības joma un parametri.
+   Funkcijas ir viens no JavaScript pamatelementiem. Funkcija JavaScript ir līdzīga procedūrai — priekšrakstu kopai, kas veic uzdevumu vai aprēķina vērtību, taču, lai procedūru kvalificētu kā funkciju, tai ir jāievada zināma ievade un jāatgriež izvade, ja pastāv kāda acīmredzama saistība starp ieeja un izeja. Lai izmantotu funkciju, tā ir jādefinē kaut kur tvērumā, no kura vēlaties to izsaukt.
+
+**Kur es varu atrast funkcijas?**
+
+JavaScript jūs atradīsit funkcijas visur. Faktiski mēs esam izmantojuši funkcijas visu kursu līdz šim; mēs vienkārši neesam par viņiem daudz runājuši. Tomēr tagad ir laiks, kad mums jāsāk skaidri runāt par funkcijām un patiešām izpētīt to sintaksi.
+
+Gandrīz vienmēr, kad izmantojat JavaScript struktūru, kurā ir iekavu pāris — ()un jūs neizmantojat vispārpieņemtu iebūvēto valodas struktūru, piemēram, for cilpu , while vai do...while cilpa vai ja... cits paziņojums , jūs izmantojat funkciju.
+

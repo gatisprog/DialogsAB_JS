@@ -12,7 +12,7 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // Song titles
-const songs = ['hey', 'summer', 'ukulele'];
+const songs = ['hey', 'summer', 'ukulele', '30 Seconds To Mars - Closer To The Edge', 'Prāta Vētra, Musiqq - Debesis iekrita tevī'];
 
 // Keep track of song
 let songIndex = 2;
@@ -176,3 +176,14 @@ audio.addEventListener('ended', nextSong);
 
 // Time of song
 audio.addEventListener('timeupdate',DurTime);
+
+// Atsaucies uz audio un skaļuma regulēšanas elementiem
+const volumeControl = document.getElementById("volume");
+
+// Iestata sākotnējo skaļumu
+audio.volume = 0.5;
+
+// Klausies uz skaļuma regulēšanas izmaiņām
+volumeControl.addEventListener("input", (e) => {
+  audio.volume = e.target.value; // Iestata skaļumu atkarībā no slīdņa vērtības
+});

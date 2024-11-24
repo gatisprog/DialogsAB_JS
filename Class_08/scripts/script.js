@@ -32,8 +32,12 @@ async function callApi(url) {
 }
 
 (async function () {
-  let data = await callApi("https://dog.ceo/api/breeds/image/random");
+  // let data = await callApi("https://dog.ceo/api/breeds/image/random");
+  //let data = await callApi("https://randomfox.ca/floof/");
+  let data = await callApi("https://random.dog/woof.json");
   console.log(data);
-  image_link = data.message;
+  //image_link = data.message;
+  //image_link = data.image;
+  image_link = data.url;
   document.getElementById("image").src = image_link;
 })();

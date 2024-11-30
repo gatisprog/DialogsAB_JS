@@ -505,7 +505,12 @@ Polimorfisms JavaScript vidē ļauj dažādiem objektiem ar kopīgām metodēm r
 
 Šajā piemērā mēs esam izveidojuši trīs klases: Animal, Dog un Cat. Katrai klasei ir metode speak, bet šī metode izturas atšķirīgi atkarībā no tā, kurai klasei objekts pieder. Kad mēs izsaucam speak metodi katram dzīvniekam masīvā, katrs objekts izpilda savu versiju speak metodei. Polimorfisms palīdz radīt elastīgāku un vieglāk uzturamu kodu, ļaujot dažādiem objektiem izpildīt savas versijas kopīgām metodēm, tādējādi nodrošinot dažādu uzvedību, nepārveidojot bāzes struktūru.
 
+2. JavaScript objektu konstruktori (JavaScript Object Constructors)
 
+Objektu konstruktora funkcijas:
 
-
+Dažreiz mums ir jāizveido daudzi viena veida objekti.Lai izveidotu objekta tipu, mēs izmantojam objektu konstruktora funkciju. Tiek uzskatīts par labu praksi konstruktora funkcijas nosaukt ar lielo pirmo burtu.
    
+![Tveršana17](https://github.com/user-attachments/assets/8c292741-7e05-4d0e-bb30-1e6810ff5e10)
+
+

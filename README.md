@@ -435,6 +435,61 @@ Piemērs:
 
 ![Tveršana9](https://github.com/user-attachments/assets/7049e123-13d9-4b0f-8e2a-3e35f36823a7)
 
+***2024.gada 25.novembrī***
+
+<ins>**Desmitā nodarbība**</ins>
+
+1. JS Objekti (https://www.w3schools.com/js/js_objects.asp)
+
+1.1 JS Objekta attēlošana (JS Display Objects)
+
+Daži JavaScript objektu parādīšanas risinājumi ir:
+
+* Objekta rekvizītu parādīšana pēc nosaukuma
+* Objekta rekvizītu parādīšana cilpā
+* Objekta parādīšana, izmantojot Object.values()
+* Objekta parādīšana, izmantojot JSON.stringify()
+
+1.1.1 Objekta īpašības var parādīt kā virkni:
+
+![Tveršana10](https://github.com/user-attachments/assets/891dc9c1-12c1-4a5a-a278-f6422e6ccf74)
+
+1.1.2 Objekta īpašības var apkopot cilpā:
+
+![Tveršana11](https://github.com/user-attachments/assets/aab37f64-baa8-41ad-911e-47088d9b914b)
+
+Piezīme:
+
+Ciklā ir jāizmanto persona [x] .
+
+persona.x nedarbosies (jo x ir cilpas mainīgais).
+
+1.1.3 Objekta parādīšana, izmantojot Object.values()
+
+Object.values()izveido masīvu no rekvizītu vērtībām:
+
+![Tveršana12](https://github.com/user-attachments/assets/10a35bef-85e2-4db2-8714-82867dc94ae5)
+
+1.1.4 Izmantojot Object.entries()
+
+Object.entries()atvieglo objektu izmantošanu cilpās:
+
+![Tveršana13](https://github.com/user-attachments/assets/88b9b101-c65a-400e-8eda-f7646c5346fa)
+
+1.1.5 Objekta parādīšana, izmantojot JSON.stringify()
+
+JavaScript objektus var pārveidot par virkni, izmantojot JSON metodi JSON.stringify(). JSON.stringify()ir iekļauts JavaScript un tiek atbalstīts visās lielākajās pārlūkprogrammās.
+
+Piezīme:
+* Rezultāts būs virkne, kas rakstīta JSON apzīmējumā:
+
+{"vārds":"Jānis","vecums":50,"pilsēta":"Ņujorka"}
+
+![Tveršana14](https://github.com/user-attachments/assets/883fb658-788c-450b-804c-53f545661b6e)
+
+
+
+
 
 
 

@@ -349,7 +349,93 @@ API ir ļoti svarīgi modernās programmēšanas pasaulē, jo tie ļauj dažādi
 
 <ins>**Devītā nodarbība**</ins>
 
-1. Objekti (https://www.w3schools.com/js/js_objects.asp)
-   Programmā JavaScript objektus var uzskatīt par īpašību kopumu. Izmantojot objekta literālo sintakse , tiek inicializēts ierobežots rekvizītu kopums; tad rekvizītus var pievienot un noņemt. Rekvizītu vērtības var būt jebkura veida vērtības, tostarp citi objekti, kas ļauj veidot sarežģītas datu struktūras. Rekvizīti tiek identificēti, izmantojot galvenās vērtības. Atslēgas vērtība ir virknes vērtība vai simbola vērtība.
+1. JS Objekti (https://www.w3schools.com/js/js_objects.asp)
+
+Programmā JavaScript objektus var uzskatīt par īpašību kopumu. Izmantojot objekta literālo sintakse , tiek inicializēts ierobežots rekvizītu kopums; tad rekvizītus var pievienot un noņemt. Rekvizītu vērtības var būt jebkura veida vērtības, tostarp citi objekti, kas ļauj veidot sarežģītas datu struktūras. Rekvizīti tiek identificēti, izmantojot galvenās vērtības. Atslēgas vērtība ir virknes vērtība vai simbola vērtība.
+
+![Car_objekt](https://github.com/user-attachments/assets/af5111f0-f66a-4c17-a396-1be5597c7cee)
+
+1.1 JS Objekta īpašibas (Object Properties) 
+
+JavaScript objekti ir ļoti elastīgi un jaudīgi. Tie var saturēt dažāda veida īpašības, kas apraksta objektu vai uzlabo tā funkcionalitāti. Šeit ir dažas svarīgas JavaScript objekta īpašības:
+
+1.1.1 Vērtības īpašības (Data Properties): Tās satur vērtības un tiek izmantotas, lai aprakstītu objekta īpašības.
+
+- Atslēga (key): Īpašības nosaukums.
+
+- Vērtība (value): Īpašības vērtība, kas var būt jebkurš datu tips.
+
+1.1.2 Funkciju īpašības (Function Properties): Tās ir īpašības, kas satur funkcijas, kuras var izsaukt uz objektu.
+
+- Parasti tās tiek sauktas par metodēm.
+
+1.1.3 Accessor īpašības (Accessor Properties): Tās tiek izmantotas, lai iegūtu un iestatītu objekta vērtības. Piešķiršanā tiek izmantoti "get" un "set".
+
+![Object_properties](https://github.com/user-attachments/assets/c11e57ed-978a-482e-af42-45a7266edebf)
+
+1.1.4 Protēšana (Prototyping): Objekti var mantot īpašības un metodes no cita objekta, ko sauc par prototipu.
+
+- Tas ļauj objektiem dalīties funkcionalitātē un resursos.
+
+1.1.5 Deskriptoru īpašības (Descriptor Properties): Tās nosaka, kā īpašība uzvedas. Deskriptorus izmanto, lai definētu vērtības īpašības un piekļuves īpašības.
+
+- Configurable: Vai īpašību var mainīt vai dzēst.
+
+- Enumerable: Vai īpašību var izsaukt cilpā (loopā).
+
+- Writable: Vai īpašības vērtību var mainīt.
+
+- Value: Pašas vērtības īpašība.
+
+1.2. JS Objekta Metodes (JS Object Methods)
+
+JavaScript objektiem ir daudzas noderīgas metodes, kas palīdz manipulēt ar datiem un veikt dažādas operācijas. Šeit ir dažas svarīgas un bieži izmantotas JavaScript objekta metodes:
+
+1.2.1 Object.keys(obj): Atgriež masīvu ar visām objekta īpašību atslēgām.
+
+![Tveršana1](https://github.com/user-attachments/assets/c673e83d-9ac1-4b7c-8ba6-db522967bb71)
+
+1.2.2 Object.values(obj): Atgriež masīvu ar visām objekta īpašību vērtībām.
+
+![Tveršana2](https://github.com/user-attachments/assets/1e16e0e7-4331-41cb-8e7a-636ee0973035)
+
+1.2.3 Object.entries(obj): Atgriež masīvu ar objekta īpašību atslēgu un vērtību pāriem.
+
+![Tveršana3](https://github.com/user-attachments/assets/777692cb-b485-45b6-834d-64f12df031bd)
+
+1.2.4 Object.assign(target, ...sources): Kopē visas īpašības no viens vai vairākiem avota objektiem uz mērķa objektu.
+
+![Tveršana4](https://github.com/user-attachments/assets/3ef6c53e-d6b7-4617-b57f-8ff31a595528)
+
+1.2.5 Object.freeze(obj): Neļauj mainīt objekta īpašības vai pievienot jaunas īpašības.
+
+![Tveršana5](https://github.com/user-attachments/assets/80115205-a67b-43f9-9f6d-589f8be1c45f)
+
+1.2.6 Object.seal(obj): Neļauj pievienot vai dzēst īpašības, bet atļauj mainīt esošās īpašības vērtības.
+
+![Tveršana6](https://github.com/user-attachments/assets/6e273a48-f21c-4d1a-a2ef-0648f454567c)
+
+1.2.7 Object.create(proto): Izveido jaunu objektu ar norādīto prototipu.
+
+![Tveršana7](https://github.com/user-attachments/assets/113c6607-e9b7-4f1b-8950-c19be1131c7b)
+
+* Vai ir iespējams izdzēst JS Objektu?
+  
+Programmā JavaScript jūs nevarat tieši izdzēst pašu objektu , taču varat noņemt atsauces uz to. JavaScript izmanto atkritumu savākšanu , lai automātiski atgūtu atmiņu objektiem, kuri vairs nav sasniedzami vai uz kuriem nav atsauces.
+
+![Tveršana8](https://github.com/user-attachments/assets/450ef14c-866f-4dcc-b781-e3e9e46bc4a0)
+
+* Vai ir iespējams izdzēst Object Properties, kas konfigurēta ar false?
+
+Programmā JavaScript, ja īpašuma configurable atribūts ir iestatīts uz false, to nevar izdzēst. Mēģinot dzēst šādu rekvizītu, izmantojot delete operatoru, klusi neizdosies ne-stingrā režīmā un radīs kļūdu stingrajā režīmā.
+
+Ja jums ir jādzēš nekonfigurējams rekvizīts un nevarat to izdarīt tieši, risinājums ir izveidot jaunu objektu bez šī rekvizīta.
+
+Piemērs:
+
+![Tveršana9](https://github.com/user-attachments/assets/7049e123-13d9-4b0f-8e2a-3e35f36823a7)
+
+
+
 
    

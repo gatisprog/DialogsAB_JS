@@ -487,8 +487,23 @@ Piezīme:
 
 ![Tveršana14](https://github.com/user-attachments/assets/883fb658-788c-450b-804c-53f545661b6e)
 
+2. Iekapsulēšana (Encapsulation) (https://developer.mozilla.org/en-US/docs/Glossary/Encapsulation)  
 
+Iekapsulēšana ir datu un funkciju iesaiņošana vienā komponentā (piemēram, klasē ) un pēc tam piekļuves kontrole šim komponentam, lai no objekta izveidotu "melno kasti" . Šī iemesla dēļ šīs klases lietotājam ir jāzina tikai tās saskarne (tas ir, ārpus klases atklātie dati un funkcijas), nevis slēptā ieviešana.
 
+3. Polimorfisms (Polymorphism) (https://developer.mozilla.org/en-US/docs/Glossary/Polymorphism)
+   
+Polimorfisms ir vienas saskarnes prezentācija vairākiem datu tipiem.
+Piemēram, veseli skaitļi, pludiņi un dubultskaitļi ir netieši polimorfi: neatkarīgi no to dažādajiem veidiem, tos visus var saskaitīt, atņemt, reizināt utt. Polimorfisms JavaScript vidē ļauj dažādiem objektiem ar kopīgām metodēm rīkoties dažādi atkarībā no objekta tipa. Šeit ir vienkāršs piemērs, kas parāda polimorfisma pielietošanu izmantojot klases un funkcijas:
+
+![Tveršana15](https://github.com/user-attachments/assets/83be6212-04cc-4bc5-a396-26d93e3fc698)
+
+JavaScript polimorfisms piemērs
+Polimorfisms JavaScript vidē ļauj dažādiem objektiem ar kopīgām metodēm rīkoties dažādi atkarībā no objekta tipa. Šeit ir vienkāršs piemērs, kas parāda polimorfisma pielietošanu izmantojot klases un funkcijas:
+
+![Tveršana16](https://github.com/user-attachments/assets/38538348-681b-4dd2-8a1b-b1c38986f5ff)
+
+Šajā piemērā mēs esam izveidojuši trīs klases: Animal, Dog un Cat. Katrai klasei ir metode speak, bet šī metode izturas atšķirīgi atkarībā no tā, kurai klasei objekts pieder. Kad mēs izsaucam speak metodi katram dzīvniekam masīvā, katrs objekts izpilda savu versiju speak metodei. Polimorfisms palīdz radīt elastīgāku un vieglāk uzturamu kodu, ļaujot dažādiem objektiem izpildīt savas versijas kopīgām metodēm, tādējādi nodrošinot dažādu uzvedību, nepārveidojot bāzes struktūru.
 
 
 

@@ -345,3 +345,11 @@ API ir ļoti svarīgi modernās programmēšanas pasaulē, jo tie ļauj dažādi
 4. Mini projektu gatavošana (https://javascript-mini-projects.netlify.app/) (https://github.com/bradtraversy/vanillawebprojects)
    
    
+***2024.gada 20.novembrī***
+
+<ins>**Devītā nodarbība**</ins>
+
+1. Objekti (https://www.w3schools.com/js/js_objects.asp)
+   Programmā JavaScript objektus var uzskatīt par īpašību kopumu. Izmantojot objekta literālo sintakse , tiek inicializēts ierobežots rekvizītu kopums; tad rekvizītus var pievienot un noņemt. Rekvizītu vērtības var būt jebkura veida vērtības, tostarp citi objekti, kas ļauj veidot sarežģītas datu struktūras. Rekvizīti tiek identificēti, izmantojot galvenās vērtības. Atslēgas vērtība ir virknes vērtība vai simbola vērtība.
+
+   

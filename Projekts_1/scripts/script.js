@@ -12,7 +12,7 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // Song titles
-const songs = ['hey', 'summer', 'ukulele', '30 Seconds To Mars - Closer To The Edge', 'Prāta Vētra, Musiqq - Debesis iekrita tevī'];
+const songs = ['hey', 'summer', 'ukulele', '30 Seconds To Mars - Closer To The Edge', 'Prāta Vētra, Musiqq - Debesis iekrita tevī', 'Green Day - 21st Century Breakdown', 'Foo Fighters - Learn to Fly'];
 
 // Keep track of song
 let songIndex = 2;
@@ -187,3 +187,76 @@ audio.volume = 0.5;
 volumeControl.addEventListener("input", (e) => {
   audio.volume = e.target.value; // Iestata skaļumu atkarībā no slīdņa vērtības
 });
+
+alert("Vai esi gatavs klausīties manu mūziku?");
+
+// Playlist saraksts
+// const playlist = document.getElementById('playlist');
+// const playlistItems = playlist.querySelectorAll('li');
+
+// Kad noklikšķina uz dziesmas
+//playlistItems.forEach(item => {
+  //item.addEventListener('click', () => {
+    // Noņem aktīvās klases no visiem playlist elementiem
+    //playlistItems.forEach(i => i.classList.remove('active'));
+
+    // Pievieno "active" klasi izvēlētajai dziesmai
+    //item.classList.add('active');
+
+    // Ielādē un atskaņo izvēlēto dziesmu
+    //const selectedSong = item.getAttribute('data-song');
+    //loadSong(selectedSong);
+    //playSong();
+  //});
+//});
+
+const playlist = document.getElementById('playlist');
+
+// Update active song in playlist
+function updateActiveSong() {
+  // Remove 'active' class from all items
+  document.querySelectorAll('.playlist-item').forEach((item) => {
+    item.classList.remove('active');
+  });
+
+  // Add 'active' class to the currently playing song
+  const activeSong = document.getElementById(`song-${songIndex}`);
+  if (activeSong) activeSong.classList.add('active');
+}
+
+// Attach click events to playlist items
+document.querySelectorAll('.playlist-item').forEach((item, index) => {
+  item.addEventListener('click', () => {
+    // Set the clicked song as the current song
+    songIndex = index;
+
+    // Load and play the selected song
+    loadSong(songs[songIndex]);
+    playSong();
+
+    // Update playlist
+    updateActiveSong();
+  });
+});
+
+// Modify next song function
+function nextSong() {
+	songIndex++;
+  
+	if (songIndex > songs.length - 1) {
+	  songIndex = 0;
+	}
+  
+	loadSong(songs[songIndex]);
+	playSong();
+	updateActiveSong(); // Update playlist
+  }
+
+// Update active song when a new song starts
+audio.addEventListener('ended', () => {
+  nextSong();
+  updateActiveSong();
+});
+
+// Initialize playlist with active song
+updateActiveSong();

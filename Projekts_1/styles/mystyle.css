@@ -140,11 +140,10 @@ body {
   transition: width 0.1s linear;
 }
 .volume-container {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
+  margin-top: 20px; /* Atstarpe no pleijera */
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -154,6 +153,38 @@ body {
 }
 
 .volume-container input[type="range"] {
-  width: 100px;
+  width: 150px; /* Skaļuma regulētāja izmērs */
   cursor: pointer;
+}
+
+.playlist-container {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Playlist atrodas labajā pusē */
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.playlist-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.playlist-container li {
+  padding: 10px 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.playlist-container li.active {
+  background-color: #fe8daa;
+  color: #fff;
+  font-weight: bold;
 }

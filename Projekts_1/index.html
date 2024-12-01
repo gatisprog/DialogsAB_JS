@@ -11,10 +11,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
     />
     <link rel="stylesheet" href="styles/mystyle.css" />
-    <title>Music Player</title>
+    <title>My Music Player</title>
   </head>
   <body>
-    <h1>Music Player</h1>
+    <h1>Mana Mūzika</h1>
 
     <div class="music-container" id="music-container">
       <div class="music-info">
@@ -23,10 +23,10 @@
           <div class="progress" id="progress"></div>
         </div>
         <span id="currTime">00:00</span> / <span id="durTime">00:00</span>
-        <div class="volume-container">
+        <!--<div class="volume-container">
           <i class="fas fa-volume-up"></i>
           <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5" />
-        </div>
+        </div>-->
       </div>
 
       <audio src="music/ukulele.mp3" id="audio"></audio>
@@ -53,6 +53,21 @@
         <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5" />
       </div>
     </div>
+
+    <!-- Playlist konteiners -->
+<div class="playlist-container">
+  <h3>Playlist</h3>
+  <ul id="playlist">
+    <li id="song-0" class="playlist-item">Hey</li>
+    <li id="song-1" class="playlist-item">Summer</li>
+    <li id="song-2" class="playlist-item">Ukulele</li>
+    <li id="song-3" class="playlist-item">Closer to the Edge</li>
+    <li id="song-4" class="playlist-item">Debesis iekrita tevī</li>
+    <li id="song-5" class="playlist-item">21st Century Breakdown</li>
+    <li id="song-6" class="playlist-item">Learn to Fly</li>
+  </ul>
+</div>
+</div>
 
     <script src="scripts/script.js"></script>
   </body>

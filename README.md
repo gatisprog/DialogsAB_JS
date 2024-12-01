@@ -345,3 +345,212 @@ API ir ļoti svarīgi modernās programmēšanas pasaulē, jo tie ļauj dažādi
 4. Mini projektu gatavošana (https://javascript-mini-projects.netlify.app/) (https://github.com/bradtraversy/vanillawebprojects)
    
    
+***2024.gada 20.novembrī***
+
+<ins>**Devītā nodarbība**</ins>
+
+1. JS Objekti (https://www.w3schools.com/js/js_objects.asp)
+
+Programmā JavaScript objektus var uzskatīt par īpašību kopumu. Izmantojot objekta literālo sintakse , tiek inicializēts ierobežots rekvizītu kopums; tad rekvizītus var pievienot un noņemt. Rekvizītu vērtības var būt jebkura veida vērtības, tostarp citi objekti, kas ļauj veidot sarežģītas datu struktūras. Rekvizīti tiek identificēti, izmantojot galvenās vērtības. Atslēgas vērtība ir virknes vērtība vai simbola vērtība.
+
+![Car_objekt](https://github.com/user-attachments/assets/af5111f0-f66a-4c17-a396-1be5597c7cee)
+
+1.1 JS Objekta īpašibas (Object Properties) 
+
+JavaScript objekti ir ļoti elastīgi un jaudīgi. Tie var saturēt dažāda veida īpašības, kas apraksta objektu vai uzlabo tā funkcionalitāti. Šeit ir dažas svarīgas JavaScript objekta īpašības:
+
+1.1.1 Vērtības īpašības (Data Properties): Tās satur vērtības un tiek izmantotas, lai aprakstītu objekta īpašības.
+
+- Atslēga (key): Īpašības nosaukums.
+
+- Vērtība (value): Īpašības vērtība, kas var būt jebkurš datu tips.
+
+1.1.2 Funkciju īpašības (Function Properties): Tās ir īpašības, kas satur funkcijas, kuras var izsaukt uz objektu.
+
+- Parasti tās tiek sauktas par metodēm.
+
+1.1.3 Accessor īpašības (Accessor Properties): Tās tiek izmantotas, lai iegūtu un iestatītu objekta vērtības. Piešķiršanā tiek izmantoti "get" un "set".
+
+![Object_properties](https://github.com/user-attachments/assets/c11e57ed-978a-482e-af42-45a7266edebf)
+
+1.1.4 Protēšana (Prototyping): Objekti var mantot īpašības un metodes no cita objekta, ko sauc par prototipu.
+
+- Tas ļauj objektiem dalīties funkcionalitātē un resursos.
+
+1.1.5 Deskriptoru īpašības (Descriptor Properties): Tās nosaka, kā īpašība uzvedas. Deskriptorus izmanto, lai definētu vērtības īpašības un piekļuves īpašības.
+
+- Configurable: Vai īpašību var mainīt vai dzēst.
+
+- Enumerable: Vai īpašību var izsaukt cilpā (loopā).
+
+- Writable: Vai īpašības vērtību var mainīt.
+
+- Value: Pašas vērtības īpašība.
+
+1.2. JS Objekta Metodes (JS Object Methods)
+
+JavaScript objektiem ir daudzas noderīgas metodes, kas palīdz manipulēt ar datiem un veikt dažādas operācijas. Šeit ir dažas svarīgas un bieži izmantotas JavaScript objekta metodes:
+
+1.2.1 Object.keys(obj): Atgriež masīvu ar visām objekta īpašību atslēgām.
+
+![Tveršana1](https://github.com/user-attachments/assets/c673e83d-9ac1-4b7c-8ba6-db522967bb71)
+
+1.2.2 Object.values(obj): Atgriež masīvu ar visām objekta īpašību vērtībām.
+
+![Tveršana2](https://github.com/user-attachments/assets/1e16e0e7-4331-41cb-8e7a-636ee0973035)
+
+1.2.3 Object.entries(obj): Atgriež masīvu ar objekta īpašību atslēgu un vērtību pāriem.
+
+![Tveršana3](https://github.com/user-attachments/assets/777692cb-b485-45b6-834d-64f12df031bd)
+
+1.2.4 Object.assign(target, ...sources): Kopē visas īpašības no viens vai vairākiem avota objektiem uz mērķa objektu.
+
+![Tveršana4](https://github.com/user-attachments/assets/3ef6c53e-d6b7-4617-b57f-8ff31a595528)
+
+1.2.5 Object.freeze(obj): Neļauj mainīt objekta īpašības vai pievienot jaunas īpašības.
+
+![Tveršana5](https://github.com/user-attachments/assets/80115205-a67b-43f9-9f6d-589f8be1c45f)
+
+1.2.6 Object.seal(obj): Neļauj pievienot vai dzēst īpašības, bet atļauj mainīt esošās īpašības vērtības.
+
+![Tveršana6](https://github.com/user-attachments/assets/6e273a48-f21c-4d1a-a2ef-0648f454567c)
+
+1.2.7 Object.create(proto): Izveido jaunu objektu ar norādīto prototipu.
+
+![Tveršana7](https://github.com/user-attachments/assets/113c6607-e9b7-4f1b-8950-c19be1131c7b)
+
+* Vai ir iespējams izdzēst JS Objektu?
+  
+Programmā JavaScript jūs nevarat tieši izdzēst pašu objektu , taču varat noņemt atsauces uz to. JavaScript izmanto atkritumu savākšanu , lai automātiski atgūtu atmiņu objektiem, kuri vairs nav sasniedzami vai uz kuriem nav atsauces.
+
+![Tveršana8](https://github.com/user-attachments/assets/450ef14c-866f-4dcc-b781-e3e9e46bc4a0)
+
+* Vai ir iespējams izdzēst Object Properties, kas konfigurēta ar false?
+
+Programmā JavaScript, ja īpašuma configurable atribūts ir iestatīts uz false, to nevar izdzēst. Mēģinot dzēst šādu rekvizītu, izmantojot delete operatoru, klusi neizdosies ne-stingrā režīmā un radīs kļūdu stingrajā režīmā.
+
+Ja jums ir jādzēš nekonfigurējams rekvizīts un nevarat to izdarīt tieši, risinājums ir izveidot jaunu objektu bez šī rekvizīta.
+
+Piemērs:
+
+![Tveršana9](https://github.com/user-attachments/assets/7049e123-13d9-4b0f-8e2a-3e35f36823a7)
+
+***2024.gada 25.novembrī***
+
+<ins>**Desmitā nodarbība**</ins>
+
+1. JS Objekti (https://www.w3schools.com/js/js_objects.asp)
+
+1.1 JS Objekta attēlošana (JS Display Objects)
+
+Daži JavaScript objektu parādīšanas risinājumi ir:
+
+* Objekta rekvizītu parādīšana pēc nosaukuma
+* Objekta rekvizītu parādīšana cilpā
+* Objekta parādīšana, izmantojot Object.values()
+* Objekta parādīšana, izmantojot JSON.stringify()
+
+1.1.1 Objekta īpašības var parādīt kā virkni:
+
+![Tveršana10](https://github.com/user-attachments/assets/891dc9c1-12c1-4a5a-a278-f6422e6ccf74)
+
+1.1.2 Objekta īpašības var apkopot cilpā:
+
+![Tveršana11](https://github.com/user-attachments/assets/aab37f64-baa8-41ad-911e-47088d9b914b)
+
+Piezīme:
+
+Ciklā ir jāizmanto persona [x] .
+
+persona.x nedarbosies (jo x ir cilpas mainīgais).
+
+1.1.3 Objekta parādīšana, izmantojot Object.values()
+
+Object.values()izveido masīvu no rekvizītu vērtībām:
+
+![Tveršana12](https://github.com/user-attachments/assets/10a35bef-85e2-4db2-8714-82867dc94ae5)
+
+1.1.4 Izmantojot Object.entries()
+
+Object.entries()atvieglo objektu izmantošanu cilpās:
+
+![Tveršana13](https://github.com/user-attachments/assets/88b9b101-c65a-400e-8eda-f7646c5346fa)
+
+1.1.5 Objekta parādīšana, izmantojot JSON.stringify()
+
+JavaScript objektus var pārveidot par virkni, izmantojot JSON metodi JSON.stringify(). JSON.stringify()ir iekļauts JavaScript un tiek atbalstīts visās lielākajās pārlūkprogrammās.
+
+Piezīme:
+* Rezultāts būs virkne, kas rakstīta JSON apzīmējumā:
+
+{"vārds":"Jānis","vecums":50,"pilsēta":"Ņujorka"}
+
+![Tveršana14](https://github.com/user-attachments/assets/883fb658-788c-450b-804c-53f545661b6e)
+
+2. Iekapsulēšana (Encapsulation) (https://developer.mozilla.org/en-US/docs/Glossary/Encapsulation)  
+
+Iekapsulēšana ir datu un funkciju iesaiņošana vienā komponentā (piemēram, klasē ) un pēc tam piekļuves kontrole šim komponentam, lai no objekta izveidotu "melno kasti" . Šī iemesla dēļ šīs klases lietotājam ir jāzina tikai tās saskarne (tas ir, ārpus klases atklātie dati un funkcijas), nevis slēptā ieviešana.
+
+3. Polimorfisms (Polymorphism) (https://developer.mozilla.org/en-US/docs/Glossary/Polymorphism)
+   
+Polimorfisms ir vienas saskarnes prezentācija vairākiem datu tipiem.
+Piemēram, veseli skaitļi, pludiņi un dubultskaitļi ir netieši polimorfi: neatkarīgi no to dažādajiem veidiem, tos visus var saskaitīt, atņemt, reizināt utt. Polimorfisms JavaScript vidē ļauj dažādiem objektiem ar kopīgām metodēm rīkoties dažādi atkarībā no objekta tipa. Šeit ir vienkāršs piemērs, kas parāda polimorfisma pielietošanu izmantojot klases un funkcijas:
+
+![Tveršana15](https://github.com/user-attachments/assets/83be6212-04cc-4bc5-a396-26d93e3fc698)
+
+JavaScript polimorfisms piemērs
+Polimorfisms JavaScript vidē ļauj dažādiem objektiem ar kopīgām metodēm rīkoties dažādi atkarībā no objekta tipa. Šeit ir vienkāršs piemērs, kas parāda polimorfisma pielietošanu izmantojot klases un funkcijas:
+
+![Tveršana16](https://github.com/user-attachments/assets/38538348-681b-4dd2-8a1b-b1c38986f5ff)
+
+Šajā piemērā mēs esam izveidojuši trīs klases: Animal, Dog un Cat. Katrai klasei ir metode speak, bet šī metode izturas atšķirīgi atkarībā no tā, kurai klasei objekts pieder. Kad mēs izsaucam speak metodi katram dzīvniekam masīvā, katrs objekts izpilda savu versiju speak metodei. Polimorfisms palīdz radīt elastīgāku un vieglāk uzturamu kodu, ļaujot dažādiem objektiem izpildīt savas versijas kopīgām metodēm, tādējādi nodrošinot dažādu uzvedību, nepārveidojot bāzes struktūru.
+
+2. JavaScript objektu konstruktori (JavaScript Object Constructors) (https://www.w3schools.com/js/js_object_constructors.asp)
+
+Objektu konstruktora funkcijas:
+
+Dažreiz mums ir jāizveido daudzi viena veida objekti. Lai izveidotu objekta tipu, mēs izmantojam objektu konstruktora funkciju. Tiek uzskatīts par labu praksi konstruktora funkcijas nosaukt ar lielo pirmo burtu.
+   
+![Tveršana17](https://github.com/user-attachments/assets/8c292741-7e05-4d0e-bb30-1e6810ff5e10)
+
+Piezīme:
+
+Konstruktora funkcijā "this" nav vērtības.
+Vērtība "this" būs kļūs par jauno objektu, kad tiek izveidots jauns objekts.
+
+- Īpašuma noklusējuma vērtības
+  
+Īpašumam piešķirtā vērtība būs noklusējuma vērtība visiem konstruktora izveidotajiem objektiem:
+
+![Ekrānuzņēmums 2024-12-01 114108](https://github.com/user-attachments/assets/f1f25be0-cb84-4352-90ad-f22589795675)
+
+- Īpašuma pievienošana objektam
+  
+Īpašuma pievienošana izveidotajam objektam ir vienkārša:
+
+Piemērs:
+
+myFather.nationality = "English"; 
+
+<ins>Piezīme:<ins> Jaunais īpašums tiks pievienots myFather . Ne uz citiem Personas objektiem .
+
+- Konstruktora funkciju metodes
+  
+Konstruktora funkcijai var būt arī šādas metodes:
+
+![Ekrānuzņēmums 2024-12-01 115034](https://github.com/user-attachments/assets/f533c988-bd82-4e16-b1c7-04fa8adf30a4)
+
+- Metodes pievienošana objektam
+  
+Metodes pievienošana izveidotajam objektam ir vienkārša:
+
+![Ekrānuzņēmums 2024-12-01 115244](https://github.com/user-attachments/assets/c44d8a57-9c37-4b76-96bb-e31211afbedb)
+
+<ins>Piezīme:<ins> Jaunā metode tiks pievienota myMother . Ne uz citiem Personas objektiem.
+
+
+***2024.gada 27.novembrī***
+
+<ins>**Vienpadsmitā nodarbība**</ins>
+
+

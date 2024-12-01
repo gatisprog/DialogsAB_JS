@@ -12,7 +12,7 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // Song titles
-const songs = ['hey', 'summer', 'ukulele', '30 Seconds To Mars - Closer To The Edge', 'Prāta Vētra, Musiqq - Debesis iekrita tevī', 'Green Day - 21st Century Breakdown', 'Foo Fighters - Learn to Fly'];
+const songs = ['hey', 'summer', 'ukulele', '30 Seconds To Mars - Closer To The Edge', 'Prāta Vētra, Musiqq - Debesis iekrita tevī', 'Green Day - 21st Century Breakdown', 'Foo Fighters - Learn to Fly', 'Limp Bizkit - Home Sweet Home Bittersweet Symphony'];
 
 // Keep track of song
 let songIndex = 2;

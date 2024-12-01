@@ -549,4 +549,8 @@ Metodes pievienošana izveidotajam objektam ir vienkārša:
 <ins>Piezīme:<ins> Jaunā metode tiks pievienota myMother . Ne uz citiem Personas objektiem.
 
 
+***2024.gada 27.novembrī***
+
+<ins>**Vienpadsmitā nodarbība**</ins>
+
 

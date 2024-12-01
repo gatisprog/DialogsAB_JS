@@ -505,12 +505,48 @@ Polimorfisms JavaScript vidē ļauj dažādiem objektiem ar kopīgām metodēm r
 
 Šajā piemērā mēs esam izveidojuši trīs klases: Animal, Dog un Cat. Katrai klasei ir metode speak, bet šī metode izturas atšķirīgi atkarībā no tā, kurai klasei objekts pieder. Kad mēs izsaucam speak metodi katram dzīvniekam masīvā, katrs objekts izpilda savu versiju speak metodei. Polimorfisms palīdz radīt elastīgāku un vieglāk uzturamu kodu, ļaujot dažādiem objektiem izpildīt savas versijas kopīgām metodēm, tādējādi nodrošinot dažādu uzvedību, nepārveidojot bāzes struktūru.
 
-2. JavaScript objektu konstruktori (JavaScript Object Constructors)
+2. JavaScript objektu konstruktori (JavaScript Object Constructors) (https://www.w3schools.com/js/js_object_constructors.asp)
 
 Objektu konstruktora funkcijas:
 
-Dažreiz mums ir jāizveido daudzi viena veida objekti.Lai izveidotu objekta tipu, mēs izmantojam objektu konstruktora funkciju. Tiek uzskatīts par labu praksi konstruktora funkcijas nosaukt ar lielo pirmo burtu.
+Dažreiz mums ir jāizveido daudzi viena veida objekti. Lai izveidotu objekta tipu, mēs izmantojam objektu konstruktora funkciju. Tiek uzskatīts par labu praksi konstruktora funkcijas nosaukt ar lielo pirmo burtu.
    
 ![Tveršana17](https://github.com/user-attachments/assets/8c292741-7e05-4d0e-bb30-1e6810ff5e10)
+
+Piezīme:
+
+Konstruktora funkcijā "this" nav vērtības.
+Vērtība "this" būs kļūs par jauno objektu, kad tiek izveidots jauns objekts.
+
+- Īpašuma noklusējuma vērtības
+  
+Īpašumam piešķirtā vērtība būs noklusējuma vērtība visiem konstruktora izveidotajiem objektiem:
+
+![Ekrānuzņēmums 2024-12-01 114108](https://github.com/user-attachments/assets/f1f25be0-cb84-4352-90ad-f22589795675)
+
+- Īpašuma pievienošana objektam
+  
+Īpašuma pievienošana izveidotajam objektam ir vienkārša:
+
+Piemērs:
+
+myFather.nationality = "English"; 
+
+<ins>Piezīme:<ins> Jaunais īpašums tiks pievienots myFather . Ne uz citiem Personas objektiem .
+
+- Konstruktora funkciju metodes
+  
+Konstruktora funkcijai var būt arī šādas metodes:
+
+![Ekrānuzņēmums 2024-12-01 115034](https://github.com/user-attachments/assets/f533c988-bd82-4e16-b1c7-04fa8adf30a4)
+
+- Metodes pievienošana objektam
+  
+Metodes pievienošana izveidotajam objektam ir vienkārša:
+
+![Ekrānuzņēmums 2024-12-01 115244](https://github.com/user-attachments/assets/c44d8a57-9c37-4b76-96bb-e31211afbedb)
+
+<ins>Piezīme:<ins> Jaunā metode tiks pievienota myMother . Ne uz citiem Personas objektiem.
+
 
 

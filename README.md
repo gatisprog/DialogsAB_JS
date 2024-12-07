@@ -549,8 +549,148 @@ Metodes pievienošana izveidotajam objektam ir vienkārša:
 <ins>Piezīme:<ins> Jaunā metode tiks pievienota myMother . Ne uz citiem Personas objektiem.
 
 
-***2024.gada 27.novembrī***
+***2024.gada 27.novembrī, 2024.gada 02.decembrī***
 
-<ins>**Vienpadsmitā nodarbība**</ins>
+<ins>**Vienpadsmitā nodarbība un Divpadsmitā nodarbība**</ins>
+
+1. JavaScript BOM (https://www.javascripttutorial.net/javascript-bom/)
+
+JavaScript BOM (Browser Object Model) ir saskarne, kas nodrošina piekļuvi pārlūkprogrammas logam un tā apakšobjektiem. Tā nav standarta daļa no JavaScript specifikācijas, taču BOM ir svarīgs tīmekļa izstrādē, jo tas nodrošina daudz noderīgu metožu un īpašību darbam ar pārlūkprogrammas logu.
+
+Šeit ir dažas no galvenajām BOM sastāvdaļām un to pielietojums:
+
+1.1. window objekts: Galvenais objekts, kas pārstāv pārlūkprogrammas logu. (https://www.javascripttutorial.net/javascript-bom/javascript-window/)
+
+- window.open(): Atver jaunu pārlūkprogrammas logu vai cilni.
+
+- window.close(): Aizver pašreizējo pārlūkprogrammas logu.
+
+- window.alert(): Parāda brīdinājuma ziņojumu. (https://www.javascripttutorial.net/javascript-bom/javascript-alert/)
+
+- window.confirm(): Parāda apstiprinājuma dialogu, kas atgriež true vai false. (https://www.javascripttutorial.net/javascript-bom/javascript-confirm/)
+
+- window.prompt(): Parāda ievades dialogu, kas atgriež lietotāja ievadīto vērtību. (https://www.javascripttutorial.net/javascript-bom/javascript-prompt/)
+
+1.2. navigator objekts: Nodrošina informāciju par pārlūkprogrammu un operētājsistēmu. (https://www.javascripttutorial.net/javascript-bom/javascript-navigator/)
+
+- navigator.userAgent: Atgriež pārlūkprogrammas identifikācijas virkni.
+
+- navigator.language: Atgriež pašreizējo valodas iestatījumu.
+
+- navigator.geolocation: Nodrošina piekļuvi lietotāja atrašanās vietas datiem.
+
+1.3. location objekts: Satur pašreizējā URL informāciju un nodrošina metodes, lai mainītu URL. (https://www.javascripttutorial.net/javascript-bom/javascript-location/)
+
+- location.href: Pilna pašreizējā URL adrese.
+
+- location.reload(): Pārlādē pašreizējo lapu.
+
+- location.assign(): Ielādē jaunu dokumentu norādītajā URL adresē.
+
+1.4. history objekts: Nodrošina piekļuvi pārlūkprogrammas apmeklējumu vēsturei. (https://www.javascripttutorial.net/javascript-bom/javascript-history/)
+
+- history.back(): Iet uz iepriekšējo lapu.
+
+- history.forward(): Iet uz nākamo lapu, ja tāda ir vēsturē.
+
+- history.go(): Iet uz norādīto lapu vēsturē.
+
+Šeit ir neliels kods, kurā izmantotas dažas BOM metodes:
+
+![image](https://github.com/user-attachments/assets/944ce885-5285-4731-b541-4ba04c605ce6)
+
+BOM palīdz veidot interaktīvas tīmekļa lietotnes, sniedzot piekļuvi un kontroli pār pārlūkprogrammas logu un tā saistītajiem objektiem.
 
 
+***2024.gada 04.decembrī***
+
+<ins>**Trīspadsmitā nodarbība**</ins>
+
+1. JavaScript DOM (https://www.javascripttutorial.net/javascript-dom/)
+
+JavaScript DOM (Document Object Model) ir struktūras modelis, kas ļauj skriptiem piekļūt un mainīt dokumenta saturu, struktūru un stilu. DOM veido koka struktūru, kur katrs mezgls ir HTML elements, un JavaScript izmanto šo struktūru, lai manipulētu ar dokumentu.
+
+(https://en.wikipedia.org/wiki/Document_Object_Model)
+
+Dokumenta objekta modelis ( DOM ) ir starpplatformu un no valodas neatkarīgs interfeiss, kas HTML vai XML dokumentu apstrādā kā koka struktūru , kurā katrs mezgls ir objekts, kas pārstāv dokumenta daļu. DOM apzīmē dokumentu ar loģisku koku. Katrs koka zars beidzas ar mezglu, un katrā mezglā ir objekti. DOM metodes ļauj programmatiski piekļūt kokam; ar tiem var mainīt dokumenta struktūru, stilu vai saturu. Mezgliem var būt pievienoti notikumu apstrādātāji (pazīstami arī kā notikumu klausītāji). Kad notikums ir aktivizēts, notikumu apstrādātāji tiek izpildīti.
+
+Ar galveno DOM standartizāciju veica World Wide Web Consortium (W3C), kas pēdējo reizi ieteikumu izstrādāja 2004. gadā. WHATWG pārņēma standarta izstrādi, publicējot to kā dzīvu dokumentu . W3C tagad publicē stabilus WHATWG standarta momentuzņēmumus.
+
+HTML DOM (dokumenta objektu modelī) katrs elements ir mezgls:
+
+- Dokuments ir dokumenta mezgls.
+- Visi HTML elementi ir elementu mezgli.
+- Visi HTML atribūti ir atribūtu mezgli.
+- HTML elementos ievietotais teksts ir teksta mezgli.
+- Komentāri ir komentāru mezgli.
+
+![image](https://github.com/user-attachments/assets/37f68f68-a130-478b-9118-c2e1591b7152)
+By ‍Birger Eriksson - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=18034500
+
+Šeit ir dažas svarīgas DOM manipulācijas metodes un piemēri:
+
+1.1. Piekļuve elementiem:
+
+- document.getElementById(id): Atgriež elementu ar noteiktu ID.
+  
+let element = document.getElementById("myElement");
+
+- document.querySelector(selector): Atgriež pirmo elementu, kas atbilst CSS selektoram.
+  
+let element = document.querySelector(".myClass");
+
+- document.querySelectorAll(selector): Atgriež NodeList ar visiem elementiem, kas atbilst CSS selektoram.
+  
+let elements = document.querySelectorAll("div");
+
+1.2. Mainīt saturu:
+- element.textContent: Maina elementa tekstu.
+
+let element = document.getElementById("myElement");
+
+element.textContent = "Jauns teksts";
+
+- element.innerHTML: Maina elementa HTML saturu.
+  
+let element = document.getElementById("myElement");
+
+element.innerHTML = "<strong>Jauns saturs</strong>";
+
+1.3. Stila maiņa:
+- element.style.property: Maina elementa CSS īpašību.
+
+let element = document.getElementById("myElement");
+
+element.style.color = "red";
+
+1.4. Elementu pievienošana un noņemšana:
+
+- document.createElement(tagName): Izveido jaunu elementu.
+
+let newElement = document.createElement("div");
+
+- parentElement.appendChild(element): Pievieno bērna elementu vecāka elementam.
+
+let parent = document.getElementById("parent");
+
+let child = document.createElement("div");
+
+parent.appendChild(child);
+
+- parentElement.removeChild(element): Noņem bērna elementu no vecāka elementa.
+
+let parent = document.getElementById("parent");
+
+let child = document.getElementById("child");
+
+parent.removeChild(child);
+
+Šeit ir pilns piemērs, kur izmanto dažādas DOM manipulācijas metodes:
+
+![image](https://github.com/user-attachments/assets/55b39699-b6c6-40d6-9023-bc6cd978e839)
+
+Šis piemērs parāda, kā JavaScript var izmantot DOM, lai piekļūtu un mainītu dokumenta saturu un izkārtojumu.
+
+(https://developer.mozilla.org/en-US/docs/Web/API/Element#events);
+
+(https://www.javascripttutorial.net/javascript-dom/javascript-getelementsbyclassname/);

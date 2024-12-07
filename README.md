@@ -553,4 +553,50 @@ Metodes pievienošana izveidotajam objektam ir vienkārša:
 
 <ins>**Vienpadsmitā nodarbība**</ins>
 
+1. JavaScript BOM (https://www.javascripttutorial.net/javascript-bom/)
 
+JavaScript BOM (Browser Object Model) ir saskarne, kas nodrošina piekļuvi pārlūkprogrammas logam un tā apakšobjektiem. Tā nav standarta daļa no JavaScript specifikācijas, taču BOM ir svarīgs tīmekļa izstrādē, jo tas nodrošina daudz noderīgu metožu un īpašību darbam ar pārlūkprogrammas logu.
+
+Šeit ir dažas no galvenajām BOM sastāvdaļām un to pielietojums:
+
+1.1. window objekts: Galvenais objekts, kas pārstāv pārlūkprogrammas logu. (https://www.javascripttutorial.net/javascript-bom/javascript-window/)
+
+- window.open(): Atver jaunu pārlūkprogrammas logu vai cilni.
+
+- window.close(): Aizver pašreizējo pārlūkprogrammas logu.
+
+- window.alert(): Parāda brīdinājuma ziņojumu. (https://www.javascripttutorial.net/javascript-bom/javascript-alert/)
+
+- window.confirm(): Parāda apstiprinājuma dialogu, kas atgriež true vai false. (https://www.javascripttutorial.net/javascript-bom/javascript-confirm/)
+
+- window.prompt(): Parāda ievades dialogu, kas atgriež lietotāja ievadīto vērtību. (https://www.javascripttutorial.net/javascript-bom/javascript-prompt/)
+
+1.2. navigator objekts: Nodrošina informāciju par pārlūkprogrammu un operētājsistēmu. (https://www.javascripttutorial.net/javascript-bom/javascript-navigator/)
+
+- navigator.userAgent: Atgriež pārlūkprogrammas identifikācijas virkni.
+
+- navigator.language: Atgriež pašreizējo valodas iestatījumu.
+
+- navigator.geolocation: Nodrošina piekļuvi lietotāja atrašanās vietas datiem.
+
+1.3. location objekts: Satur pašreizējā URL informāciju un nodrošina metodes, lai mainītu URL. (https://www.javascripttutorial.net/javascript-bom/javascript-location/)
+
+- location.href: Pilna pašreizējā URL adrese.
+
+- location.reload(): Pārlādē pašreizējo lapu.
+
+- location.assign(): Ielādē jaunu dokumentu norādītajā URL adresē.
+
+1.4. history objekts: Nodrošina piekļuvi pārlūkprogrammas apmeklējumu vēsturei. (https://www.javascripttutorial.net/javascript-bom/javascript-history/)
+
+- history.back(): Iet uz iepriekšējo lapu.
+
+- history.forward(): Iet uz nākamo lapu, ja tāda ir vēsturē.
+
+- history.go(): Iet uz norādīto lapu vēsturē.
+
+Šeit ir neliels kods, kurā izmantotas dažas BOM metodes:
+
+![image](https://github.com/user-attachments/assets/944ce885-5285-4731-b541-4ba04c605ce6)
+
+BOM palīdz veidot interaktīvas tīmekļa lietotnes, sniedzot piekļuvi un kontroli pār pārlūkprogrammas logu un tā saistītajiem objektiem.

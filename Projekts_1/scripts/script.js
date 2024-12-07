@@ -12,7 +12,7 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // Song titles
-const songs = ['hey', 'summer', 'ukulele', '30 Seconds To Mars - Closer To The Edge', 'Prāta Vētra, Musiqq - Debesis iekrita tevī', 'Green Day - 21st Century Breakdown', 'Foo Fighters - Learn to Fly', 'Limp Bizkit - Home Sweet Home Bittersweet Symphony'];
+const songs = ['hey', 'summer', 'ukulele', '30 Seconds To Mars - Closer To The Edge', 'Prata Vetra, Musiqq - Debesis iekrita tevi', 'Green Day - 21st Century Breakdown', 'Foo Fighters - Learn to Fly', 'Limp Bizkit - Home Sweet Home Bittersweet Symphony'];
 
 // Keep track of song
 let songIndex = 2;
@@ -260,3 +260,10 @@ audio.addEventListener('ended', () => {
 
 // Initialize playlist with active song
 updateActiveSong();
+
+// TESTI
+console.assert(songs.length > 0, 'Dziesmu saraksts ir tukšs!');
+loadSong(songs[0]);
+console.assert(audio.src.includes('hey.mp3'), 'loadSong nedarbojas pareizi!');
+console.assert(audio.volume === 0.5, 'Sākotnējais skaļums nav pareizs!');
+

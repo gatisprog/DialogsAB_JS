@@ -549,9 +549,9 @@ Metodes pievienošana izveidotajam objektam ir vienkārša:
 <ins>Piezīme:<ins> Jaunā metode tiks pievienota myMother . Ne uz citiem Personas objektiem.
 
 
-***2024.gada 27.novembrī***
+***2024.gada 27.novembrī, 2024.gada 02.decembrī***
 
-<ins>**Vienpadsmitā nodarbība**</ins>
+<ins>**Vienpadsmitā nodarbība un Divpadsmitā nodarbība**</ins>
 
 1. JavaScript BOM (https://www.javascripttutorial.net/javascript-bom/)
 

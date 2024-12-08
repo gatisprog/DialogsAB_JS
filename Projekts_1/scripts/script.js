@@ -12,7 +12,7 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // Song titles
-const songs = ['hey', 'summer', 'ukulele', '30 Seconds To Mars - Closer To The Edge', 'Prata Vetra, Musiqq - Debesis iekrita tevi', 'Green Day - 21st Century Breakdown', 'Foo Fighters - Learn to Fly', 'Limp Bizkit - Home Sweet Home Bittersweet Symphony'];
+const songs = ['hey', 'summer', 'ukulele', '30 Seconds To Mars - Closer To The Edge', 'Prata Vetra_Musiqq - Debesis iekrita tevi', 'Green Day - 21st Century Breakdown', 'Foo Fighters - Learn to Fly', 'Limp Bizkit - Home Sweet Home Bittersweet Symphony'];
 
 // Keep track of song
 let songIndex = 2;
@@ -25,7 +25,25 @@ function loadSong(song) {
   title.innerText = song;
   audio.src = `music/${song}.mp3`;
   cover.src = `images/${song}.jpg`;
+
+  audio.onloadeddata = () => { // Use 'onloadeddata' or 'canplaythrough'
+    let isPlaying = false; // Sākotnējais stāvoklis
+
+    if (isPlaying) {
+        playSong(); // Play only if isPlaying is true (avoids autoplay)
+    }
+};
+
+audio.onerror = (e) => {
+  console.error("Error loading audio:", e);
+  // Handle the error, e.g., display an error message to the user
+  // or attempt to load the next song.
 }
+
+  audio.load();
+  updatePlaylist();
+}
+
 
 // Play song
 function playSong() {
@@ -34,6 +52,7 @@ function playSong() {
   playBtn.querySelector('i.fas').classList.add('fa-pause');
 
   audio.play();
+  isPlaying = true; //Set isPlaying to true
 }
 
 // Pause song
@@ -43,7 +62,17 @@ function pauseSong() {
   playBtn.querySelector('i.fas').classList.remove('fa-pause');
 
   audio.pause();
+  isPlaying = false; // Set isPlaying to false
 }
+
+// Add event listeners to your play/pause button
+/*playBtn.addEventListener('click', () => {
+  if (isPlaying) {
+      pauseSong();
+  } else {
+      playSong();
+  }
+});*/
 
 // Previous song
 function prevSong() {
@@ -54,21 +83,27 @@ function prevSong() {
   }
 
   loadSong(songs[songIndex]);
-
   playSong();
 }
 
 // Next song
 function nextSong() {
-  songIndex++;
-
-  if (songIndex > songs.length - 1) {
-    songIndex = 0;
+  if (isShuffle) {
+    let randomIndex;
+    do {
+      randomIndex = Math.floor(Math.random() * songs.length);
+    } while (randomIndex === songIndex); // Lai nodrošinātu, ka dziesma neatkārtojas uzreiz
+    songIndex = randomIndex;
+  } else {
+    songIndex++;
+    if (songIndex > songs.length - 1) {
+      songIndex = 0;
+    }
   }
 
   loadSong(songs[songIndex]);
-
   playSong();
+  updatePlaylist();
 }
 
 // Update progress bar
@@ -252,6 +287,10 @@ function nextSong() {
 	updateActiveSong(); // Update playlist
   }
 
+  // Shuffle poga
+let isShuffle = false; // Sākotnējais stāvoklis
+const shuffleBtn = document.getElementById('shuffle');
+
 // Update active song when a new song starts
 audio.addEventListener('ended', () => {
   nextSong();
@@ -266,4 +305,21 @@ console.assert(songs.length > 0, 'Dziesmu saraksts ir tukšs!');
 loadSong(songs[0]);
 console.assert(audio.src.includes('hey.mp3'), 'loadSong nedarbojas pareizi!');
 console.assert(audio.volume === 0.5, 'Sākotnējais skaļums nav pareizs!');
+console.assert(isShuffle === false, 'Shuffle režīms sākumā nav izslēgts!');
+shuffleBtn.click();
+console.assert(isShuffle === true, 'Shuffle režīms netika ieslēgts pēc klikšķa!');
+
+
+// Shuffle poga
+shuffleBtn.addEventListener('click', () => {
+  isShuffle = !isShuffle; // Pārslēdz shuffle režīmu
+  shuffleBtn.classList.toggle('active', isShuffle); // Pievieno/Noņem aktīvās klases stilu
+});
+
+function updatePlaylist() {
+  const playlistItems = document.querySelectorAll('.playlist-item');
+  playlistItems.forEach((item, index) => {
+    item.classList.toggle('active', index === songIndex);
+  });
+}
 

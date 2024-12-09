@@ -206,10 +206,10 @@ audio.addEventListener('timeupdate', updateProgress);
 // Click on progress bar
 progressContainer.addEventListener('click', setProgress);
 
-// Song ends
+// Dziesma beidzas
 audio.addEventListener('ended', nextSong);
 
-// Time of song
+// Dziesmas laiks (ilgums)
 audio.addEventListener('timeupdate',DurTime);
 
 // Atsaucies uz audio un skaļuma regulēšanas elementiem

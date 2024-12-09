@@ -247,34 +247,34 @@ alert("Vai esi gatavs klausīties manu mūziku?");
 
 const playlist = document.getElementById('playlist');
 
-// Update active song in playlist
+// Atjauno aktīvo dziesmu plejlistē
 function updateActiveSong() {
-  // Remove 'active' class from all items
+  // Noņem aktīvās klases no visiem playlist elementiem
   document.querySelectorAll('.playlist-item').forEach((item) => {
     item.classList.remove('active');
   });
 
-  // Add 'active' class to the currently playing song
+  // Pievieno "active" klasi izvēlētajai dziesmai
   const activeSong = document.getElementById(`song-${songIndex}`);
   if (activeSong) activeSong.classList.add('active');
 }
 
-// Attach click events to playlist items
+// Pievienojiet klikšķu notikumus atskaņošanas sarakstam
 document.querySelectorAll('.playlist-item').forEach((item, index) => {
   item.addEventListener('click', () => {
-    // Set the clicked song as the current song
+    // Atzīmē nospiesto dziesmu kā pasreizējo dziesmu
     songIndex = index;
 
-    // Load and play the selected song
+    // Ielādē un atskaņo izvēlēto dziesmu
     loadSong(songs[songIndex]);
     playSong();
 
-    // Update playlist
+    // Atjauno plejlisti
     updateActiveSong();
   });
 });
 
-// Modify next song function
+// Modificē nākamās dziesmas funkcijas
 function nextSong() {
 	songIndex++;
   
@@ -291,7 +291,7 @@ function nextSong() {
 let isShuffle = false; // Sākotnējais stāvoklis
 const shuffleBtn = document.getElementById('shuffle');
 
-// Update active song when a new song starts
+// Atjauno aktīvo dziesmu, kad sākas jauna dziesma
 audio.addEventListener('ended', () => {
   nextSong();
   updateActiveSong();
